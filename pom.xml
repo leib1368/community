@@ -23,7 +23,7 @@
             <properties>
                 <db.url>jdbc:mysql://39.97.162.177:3306/leib</db.url>
                 <db.user>root</db.user>
-                <db.password>0000</db.password>
+                <db.password>root</db.password>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -68,7 +68,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.19</version>
+            <version>5.1.47</version>
         </dependency>
 
         <dependency>
@@ -118,7 +118,7 @@
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>8.0.19</version>
+                        <version>5.1.47</version>
                     </dependency>
                     <dependency>
                         <groupId>com.h2database</groupId>
