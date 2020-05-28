@@ -20,7 +20,7 @@ java -jar target/community-0.0.1-SNAPSHOT.jar
 ```
 http://localhost:8887
 ```
-
+java -jar -Dspring.profiles.active=production target/community-0.0.1-SNAPSHOT.jar
 
 ## 资料
 [Spring 文档](https://spring.io/guides)    

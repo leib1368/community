@@ -21,9 +21,9 @@
         <profile>
             <id>dev</id>
             <properties>
-                <db.url>jdbc:h2:~/community</db.url>
-                <db.user>sa</db.user>
-                <db.password>123</db.password>
+                <db.url>jdbc:mysql://39.97.162.177:3306/leib</db.url>
+                <db.user>root</db.user>
+                <db.password>0000</db.password>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -68,7 +68,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.45</version>
+            <version>8.0.19</version>
         </dependency>
 
         <dependency>
@@ -118,7 +118,7 @@
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.45</version>
+                        <version>8.0.19</version>
                     </dependency>
                     <dependency>
                         <groupId>com.h2database</groupId>
