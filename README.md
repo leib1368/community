@@ -66,6 +66,7 @@ mvn flyway:migrate
 mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
 java -jar -Dspring.profiles.active=production target/community-0.0.1-SNAPSHOT.jar
 vim src/main/resources/application-production.properties
+java -jar community-0.0.1-SNAPSHOT.jar
 ```
 
 ## 更新日志
