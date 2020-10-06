@@ -14,7 +14,10 @@ import org.springframework.stereotype.Component;
 import java.util.*;
 
 /**
- * Created by codedrinker on 2019/8/1.
+ *
+ * @author codedrinker
+ * @date 2019/8/1
+ * spring定时任务 获取最热标签 并不懂
  */
 @Component
 @Slf4j

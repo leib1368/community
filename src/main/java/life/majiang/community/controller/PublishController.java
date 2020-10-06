@@ -41,6 +41,7 @@ public class PublishController {
 
     @GetMapping("/publish")
     public String publish(Model model) {
+        //获取下方标签
         model.addAttribute("tags", TagCache.get());
         return "publish";
     }

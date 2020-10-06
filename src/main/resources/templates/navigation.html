@@ -32,17 +32,21 @@
                             })
                         }
                     </script>
+                    <!--此处应该是广告功能-->
                     <li th:each="ad : ${#httpServletRequest.getServletContext().getAttribute('NAV')}">
                         <a th:href="${ad.url}" th:text="${ad.title}" th:onclick="clickNav([[${ad.title}]])"
                            target="_blank"></a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <!--提问-->
                     <li th:if="${session.user != null}">
                         <a href="/publish">提问</a>
                     </li>
+                    <!--通知-->
                     <li><a href="/profile/replies">通知 <span class="badge" th:text="${session.unreadCount}"></span></a>
                     </li>
+                    <!--如果已登录-->
                     <li class="dropdown" th:if="${session.user != null}">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">
@@ -54,6 +58,7 @@
                             <li><a href="/logout">退出登录</a></li>
                         </ul>
                     </li>
+                    <!--账户未登录  -->
                     <li th:if="${session.user == null}">
                         <a th:href="@{https://github.com/login/oauth/authorize(client_id='d34ce5d8278627fdb2a8',redirect_uri=${#httpServletRequest.getServletContext().getAttribute('redirectUri')},scope='user',state=1)}">登录</a>
                     </li>

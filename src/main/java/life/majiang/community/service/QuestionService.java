@@ -202,6 +202,7 @@ public class QuestionService {
         }
     }
 
+    //阅读数累加
     public void incView(Long id) {
         Question question = new Question();
         question.setId(id);

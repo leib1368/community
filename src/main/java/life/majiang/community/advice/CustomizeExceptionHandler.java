@@ -16,11 +16,14 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * Created by codedrinker on 2019/5/28.
+ *
+ * @author codedrinker
+ * @date 2019/5/28
  */
 @ControllerAdvice
 @Slf4j
 public class CustomizeExceptionHandler {
+    /*作用：统一异常处理，也可以指定要处理的异常类型*/
     @ExceptionHandler(Exception.class)
     ModelAndView handle(Throwable e, Model model, HttpServletRequest request, HttpServletResponse response) {
         String contentType = request.getContentType();

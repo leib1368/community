@@ -31,7 +31,9 @@ public class IndexController {
                         @RequestParam(name = "search", required = false) String search,
                         @RequestParam(name = "tag", required = false) String tag,
                         @RequestParam(name = "sort", required = false) String sort) {
+        //page size 分页功能 search 搜索框文字 tag 右下角热门标签 sort xx天最热文章
         PaginationDTO pagination = questionService.list(search, tag, sort, page, size);
+        //获取最热标签
         List<String> tags = hotTagCache.getHots();
         model.addAttribute("pagination", pagination);
         model.addAttribute("search", search);

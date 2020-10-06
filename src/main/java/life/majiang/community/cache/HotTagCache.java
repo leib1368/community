@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 /**
+ * 最热标签 定时缓存
  * Created by codedrinker on 2019/8/2.
  */
 

@@ -51,6 +51,10 @@ function comment(e) {
     comment2target(commentId, 2, content);
 }
 
+function like(e) {
+    var id = e.getAttribute("data-id");
+    console.log(id);
+}
 /**
  * 展开二级评论
  */
